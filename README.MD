@@ -1,1 +1,7 @@
-Command line tool application development using NodeJS.
+##devise
+
+The devise Command line tool application development using NodeJS and commander.js
+
+###Usage
+
+devise <option>
