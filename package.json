@@ -1,0 +1,12 @@
+{
+  "name": "devise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Sandeep kumar patel <sandeep@tutorialsavvy.com>",
+  "license": "ISC",
+  "preferGlobal": true,
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
