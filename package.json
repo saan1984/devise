@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Command line tool for host machine details",
   "bin": {
-    "devise": "devise.js"
+    "devise": "index.js"
   },
   "keywords": "command, cli",
   "repository": {
