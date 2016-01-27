@@ -2,11 +2,13 @@
   "name": "devise",
   "version": "1.0.0",
   "description": "Command line tool for host machine details",
-  "main": "devise.js",
-  "keywords":"command, cli",
-  "repository":{
-    "type":"git",
-    "url":"https://github.com/saan1984/devise.git"
+  "bin": {
+    "devise": "devise.js"
+  },
+  "keywords": "command, cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saan1984/devise.git"
   },
   "author": "Sandeep kumar patel <sandeep@tutorialsavvy.com>",
   "license": "ISC",
