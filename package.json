@@ -1,9 +1,9 @@
 {
   "name": "devise",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Command line tool for host machine details",
   "bin": {
-    "devise": "index.js"
+    "devise": "./index.js"
   },
   "keywords": "command, cli",
   "repository": {

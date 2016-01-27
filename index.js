@@ -1,5 +1,7 @@
 #!/usr/bin/env node
+
 var commander = require("commander"),
+    process = require("process"),
     os = require("os");
 
 var getMachineName = function(){
