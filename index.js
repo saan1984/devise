@@ -24,3 +24,5 @@ commander.command('devise')
             platformType:getPlatformType()
         }
     });
+
+commander.parse(process.argv);
