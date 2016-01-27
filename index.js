@@ -8,7 +8,7 @@ var getMachineName = function(){
 };
 
 var getPlatformType = function(){
-    console.log("Platform type ",os.hostname());
+    console.log("Platform type ",os.platform());
     return os.platform();
 };
 
