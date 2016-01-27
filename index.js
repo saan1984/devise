@@ -14,10 +14,10 @@ var getPlatformType = function(){
     return os.platform();
 };
 
-commander.command('devise')
+commander.command('all')
     .description('returns the details of the host machine.')
-    .option("machineName", getMachineName)
-    .option("platformType", getPlatformType)
+    .option("-machineName", getMachineName())
+    .option("-platformType", getPlatformType())
     .action(function(){
         console.log("Host name ",os.hostname());
         console.log("Platform type ",os.platform());
