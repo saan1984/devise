@@ -17,6 +17,8 @@ commander.command('devise')
     .option("machineName", getMachineName)
     .option("platformType", getPlatformType)
     .action(function(){
+        console.log("Host name ",os.hostname());
+        console.log("Platform type ",os.platform());
         return {
             hostName:getMachineName(),
             platformType:getPlatformType()
