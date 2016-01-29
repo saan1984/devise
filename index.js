@@ -1,30 +1,35 @@
 #!/usr/bin/env node
-
+//Node.js Command development using Commander.js
 var commander = require("commander"),
     process = require("process"),
     os = require("os");
 
+//Returns name of the host machine
 var getMachineName = function(){
-    console.log("Host name ",os.hostname());
     return os.hostname();
 };
 
-var getPlatformType = function(){
-    console.log("Platform type ",os.platform());
+//Returns type of OS
+var getMachineType = function(){
     return os.platform();
 };
 
-commander.command('all')
+//Defining command devise info --machineName --machineType
+commander.command("info")
     .description('returns the details of the host machine.')
-    .option("-machineName", getMachineName())
-    .option("-platformType", getPlatformType())
-    .action(function(){
-        console.log("Host name ",os.hostname());
-        console.log("Platform type ",os.platform());
-        return {
-            hostName:getMachineName(),
-            platformType:getPlatformType()
+    .option("--machineName", "return machine name")
+    .option("--machineType","return machine type")
+    .action(function(cmd){
+        var resultObject = {};
+        var options = commander.args;
+        if(cmd.machineName){
+            resultObject.machineName = getMachineName();
         }
+        if(cmd.machineType){
+            resultObject.machineType = getMachineType();
+        }
+        console.log("resultObject ",resultObject);
+        return resultObject;
     });
 
 commander.parse(process.argv);
