@@ -1,6 +1,6 @@
 {
   "name": "devise",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "Command line tool for host machine details",
   "bin": {
     "devise": "./index.js"

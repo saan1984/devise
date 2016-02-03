@@ -17,18 +17,17 @@ var getMachineType = function(){
 //Defining command devise info --machineName --machineType
 commander.command("info")
     .description('returns the details of the host machine.')
-    .option("--machineName", "return machine name")
+    .option("--machineName","return machine name")
     .option("--machineType","return machine type")
     .action(function(cmd){
         var resultObject = {};
-        var options = commander.args;
         if(cmd.machineName){
             resultObject.machineName = getMachineName();
         }
         if(cmd.machineType){
             resultObject.machineType = getMachineType();
         }
-        console.log("resultObject ",resultObject);
+        console.log(resultObject);
         return resultObject;
     });
 
